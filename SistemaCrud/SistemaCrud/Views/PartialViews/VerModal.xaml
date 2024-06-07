@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SistemaCrud.Views.PartialViews.VerModal">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Spacing="15">
+                <Label Text="Ingresa la cedula del usuario:"/>
+                <Entry x:Name="id" Placeholder="Cedula del usuario" Keyboard="Numeric" IsEnabled="False"/>
+                <Label Text="Ingresa el nombre del usuario:"/>
+                <Entry x:Name="nombre" Placeholder="Nombre del usuario" IsEnabled="False"/>
+                <Label Text="Ingresa el apellido del usuario:"/>
+                <Entry x:Name="apellido" Placeholder="Apellido del usuario" IsEnabled="False"/>
+                <Label Text="Ingresa la edad del usuario:"/>
+                <Entry x:Name="edad" Placeholder="Edad del usuario" Keyboard="Numeric" IsEnabled="False"/>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

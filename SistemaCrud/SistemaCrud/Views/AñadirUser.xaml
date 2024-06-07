@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SistemaCrud.Views.AñadirUser">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#F71937" Padding="24" CornerRadius="0" Margin="0,0,0,20">
+                <Label Text="AÑADIR USUARIO" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+            </Frame>
+
+            <StackLayout Spacing="15">
+                <Label Text="Ingresa la cedula del usuario:"/>
+                <Entry x:Name="id" Placeholder="Cedula del usuario" Keyboard="Numeric"/>
+                <Label Text="Ingresa el nombre del usuario:"/>
+                <Entry x:Name="nombre" Placeholder="Nombre del usuario"/>
+                <Label Text="Ingresa el apellido del usuario:"/>
+                <Entry x:Name="apellido" Placeholder="Apellido del usuario"/>
+                <Label Text="Ingresa la edad del usuario:"/>
+                <Entry x:Name="edad" Placeholder="Edad del usuario" Keyboard="Numeric" TextChanged="edad_TextChanged"/>
+            </StackLayout>
+            <Button Text="Guardar"
+            x:Name="btn_guardar"
+            Clicked="btn_guardar_Clicked"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            Margin="0,20,0,0"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

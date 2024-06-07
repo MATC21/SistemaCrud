@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SistemaCrud.Views.Detail">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#F71937" Padding="24" CornerRadius="0" Margin="0,0,0,20">
+                <Label Text="SISTEMA DE REGISTRO DE USUARIOS" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+            </Frame>
+            <Image Source="IconList.png"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

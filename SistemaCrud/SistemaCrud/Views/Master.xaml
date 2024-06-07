@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SistemaCrud.Views.Master"
+             Title="Master">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Menu" Grid.Column="1" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center" FontSize="30"/>
+
+                <Button Text="+ USUARIO" Grid.Column="1" Grid.Row="1" x:Name="btnUser" BackgroundColor="White" Clicked="btnUser_Clicked" />
+                <Button Text="LISTA USUARIOS" Grid.Column="1" Grid.Row="2" x:Name="btnList" BackgroundColor="White" Clicked="btnList_Clicked"/>
+
+
+                <ImageButton Grid.Column="0" Grid.Row="1" BackgroundColor="White" Source="IconUser.png"/>
+                <ImageButton Grid.Column="0" Grid.Row="2" BackgroundColor="White" Source="IconList.png"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
